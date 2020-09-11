@@ -1,0 +1,54 @@
+*{
+    font-family: 'Satisfy', cursive;
+}
+
+body{
+    margin: 0 auto;
+    background:url(images/background.jpg)no-repeat center center fixed;
+    -webkit-background-size :cover;
+    background-size: cover;
+    font-family: 'Satisfy', cursive;
+}
+
+
+.input-group{
+    margin-top: 10px;
+}
+
+h1{
+    padding-top: 20px;
+    font-size: 48px;
+    font-weight: bold;
+}
+h4{
+    font-family: 'Satisfy', cursive;
+}
+
+footer{
+    background-color: rgb(218, 202, 202);
+    opacity: 0.5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    color: #6e6aae;
+    clear: both;
+    margin-bottom:-10px;
+    background-attachment:scroll;
+}
+.value{
+    font-size: 18px;
+    color:#fc0366;
+}
+p{
+    font-size: 1.3rem;
+    padding-top: 10px;
+    font-family: 'Satisfy', cursive;
+}
+footer a {
+    text-decoration: none;
+    cursor: pointer;
+    color:#e62a9e  ;
+  }

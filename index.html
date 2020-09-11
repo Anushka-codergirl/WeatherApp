@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <meta name="description" content="Weather App using WeatherApi"/>
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/thunder-cloud-and-rain_26c8.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <!-- Content here -->
+        <h1 class="text-center">Weather App</h1>
+
+        <div class="row justify-content-center text-center">
+            <div class="col-md-6 align-self-center">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control city " placeholder="Location">
+                    <div class="input-group-append">
+                      <button class="btn btn-warning submit">Get Forecast</button></div>
+                  </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-lg-10 align-self-center">  
+        <div class="card">
+            <div class="card-body">
+                <img src="images/climate-change.png" class="weather-icon img-fluid mx-auto d-block">
+              <h4 class="card-title weather text-center text-success">It's too cold to be pretty!</h4>
+              <h2 class="temp text-center">0&deg;C</h2>
+              <p class="float-left place text-primary">Place</p>
+              <p class="float-right date text-danger"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/>
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="card-body">
+                  <img src="images/cloud.png" class="img-fluid mx-auto d-block" alt="">
+                  <p class="card-text text-center">Min</p>
+                  <h5 class="min-temp value text-center text-success"></h5>
+                </div>
+              </div>
+            </div>
+              <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/sun.png" class="img-fluid mx-auto d-block" alt="">
+                  <p class="card-text text-center">Max</p>
+                  <h5 class="max-temp value text-center text-success"></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/wind.png" alt="" class="img-fluid mx-auto d-block">
+                  <p class="card-text text-center">Wind Speed</p>
+                  <h5 class="wind-speed value text-center text-success"></h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-2">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="images/humidity.png" alt="" class="img-fluid mx-auto d-block">
+                  <p class="card-text text-center">Humidity</p>
+                  <h5 class="humidity value text-center text-success"></h5>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <div class="card">
+                <div class="card-body">
+                    <img src="images/speed.png" alt="" class="img-fluid mx-auto d-block">
+                    <p class="card-text text-center">Pressure</p>
+                    <h5 class="pressure value text-center text-success"></h5>
+                </div>
+              </div>
+            </div>
+          </div> 
+      </div>
+      <br/>
+      <br/>
+      <footer>
+        <p class="text-center">Made with &hearts; by <a href="https://github.com/Anushka-codergirl">Anushka Raj</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+</body>
+</html>
