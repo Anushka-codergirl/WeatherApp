@@ -3,5 +3,7 @@
 <img src= "WeatherApp.png"/>
 <img src= "Weather-App.png"/>
 
-Stack: HTML, CSS, Javascript, Bootstrap4
-API : [OpenWeatherMap](https://openweathermap.org/api)
+## Stack: 
+HTML, CSS, Javascript, Bootstrap4
+## API: 
+[OpenWeatherMap](https://openweathermap.org/api)
