@@ -35,7 +35,7 @@ function displayWeather(){
         let humidity=data.list[0].main.humidity;
         let pressure=data.list[0].main.pressure;
 
-     //display weather
+     //Display weather
         document.querySelector('.temp').textContent=temp + "\u00B0 C";
         document.querySelector('.weather').textContent=weather;       
         document.querySelector('.wind-speed').textContent=windSpeed + " kph";
@@ -45,7 +45,7 @@ function displayWeather(){
         document.querySelector('.pressure').textContent=pressure + " Pa.";
         document.querySelector('.place').textContent=place;
         
-     //change icon for different weathers
+     //Change image for different weathers
         if( weather=='moderate rain')
         weatherIcon.setAttribute('src','images/moderate.png');
         else if(weather=='haze')
@@ -64,7 +64,7 @@ function displayWeather(){
 })
 
 
-//daily forecast
+//Daily forecast
 let forecastapi="https://api.openweathermap.org/data/2.5/forecast/daily/find?q="+ place +"&units=metric&appid=60dc55b1b64f048387de957a5efe4ab2";
 fetch(forecastapi)
 .then(response=>{
@@ -77,9 +77,9 @@ fetch(forecastapi)
 }
 let weatherIcon=document.querySelector('.weather-icon');
 
-//add today's date
+//Add today's date and time
 let date=document.querySelector('.date');
 let today=new Date();
-const options={year: 'numeric', month: 'long', day: 'numeric' }
+const options={year: 'numeric', month: 'long', day: 'numeric',hour:'numeric',minute:'numeric'}
 date.textContent=today.toLocaleDateString('en-US',options);
 
