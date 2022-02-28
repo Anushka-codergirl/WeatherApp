@@ -17,7 +17,7 @@ function displayWeather(){
     let place = input.value;
     console.log(place);
 
-    let api="https://api.openweathermap.org/data/2.5/find?q="+ place +"&units=metric&appid=60dc55b1b64f048387de957a5efe4ab2";
+    let api="https://api.openweathermap.org/data/2.5/find?q="+ place +"&units=metric&appid=67a44313aaef4e35a03ebce53cc55905";
     console.log(api);
     fetch(api)
     .then(response=>{
